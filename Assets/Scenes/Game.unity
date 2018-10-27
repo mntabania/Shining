@@ -143,9 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46151300e42a08044b5371c641473066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveFrequency: 20
-  waveHeight: 20
-  waveLength: 20
+  waveFrequency: 1
+  waveHeight: 0.5
+  waveLength: 0.3
   edgeBlend: 1
   forceFlatShading: 1
 --- !u!64 &26865435
@@ -1434,6 +1434,7 @@ GameObject:
   - component: {fileID: 412319825}
   - component: {fileID: 412319829}
   - component: {fileID: 412319830}
+  - component: {fileID: 412319831}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1514,7 +1515,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412319824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c7a1303f8660c34d8caa28af23d660c, type: 3}
   m_Name: 
@@ -1532,6 +1533,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 341889952d2af874fb993388087714af, type: 2}
+--- !u!114 &412319831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412319824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf57a50d8d799d439c3da180587b602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1765079723}
+  distance: 10
+  xSpeed: 2
+  ySpeed: 5
+  yMinLimit: -90
+  yMaxLimit: 90
+  distanceMin: 20
+  distanceMax: 20
+  smoothTime: 5
 --- !u!1001 &414034614
 Prefab:
   m_ObjectHideFlags: 0
@@ -2883,6 +2904,25 @@ MonoBehaviour:
   mapZ: 10
   cubePrefab: {fileID: 1439037392543586, guid: 2fd3c59c430d14b44a70f7fc70b7eea7, type: 2}
   centerObj: {fileID: 1765079723}
+  terrainVisuals:
+    m_keys: 0100000002000000030000000400000005000000060000000700000000000000
+    m_values:
+    - data:
+      - {fileID: 1654031451464004, guid: 1cabe50e01a5ba34aac9b660f4ca71ed, type: 2}
+    - data:
+      - {fileID: 1255220954495978, guid: 7ce8ff77132093f4da3f2d8cb0876ff4, type: 2}
+    - data:
+      - {fileID: 1960483894002118, guid: c291e80b4e3bd6940a732e6027a8d72b, type: 2}
+    - data:
+      - {fileID: 1983174424586332, guid: 872c16f7e1cc12b4793e2c3d414fa189, type: 2}
+      - {fileID: 1081189039308660, guid: d853c5ba406ab2449b57a72ebcf7e84b, type: 2}
+    - data:
+      - {fileID: 1441977150295452, guid: 32f76d6f92327804aac5a09301211639, type: 2}
+    - data:
+      - {fileID: 1081667271093170, guid: 1029e45609b022b42995be807cce94bf, type: 2}
+    - data:
+      - {fileID: 1445259418899802, guid: bf382bdae4dd23b428474523b2028c22, type: 2}
+    - data: []
 --- !u!1 &1006422831
 GameObject:
   m_ObjectHideFlags: 0
