@@ -38,4 +38,12 @@ public static class Utilities  {
         }
         return (T[])Enum.GetValues(typeof(T));
     }
+
+    //upper bound is exclusive, lower bound inclusive
+    public static bool IsInRange(int value, int lowerBound, int upperBound) {
+        if (value >= lowerBound && value < upperBound) {
+            return true;
+        }
+        return false;
+    }
 }
